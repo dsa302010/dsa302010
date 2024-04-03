@@ -83,7 +83,8 @@ Sidebar::Sidebar(QWidget *parent) : QFrame(parent), onroad(false), flag_pressed(
     {6, {"night_theme", {QColor(0, 255, 212)}}},
     {7, {"love_theme", {QColor(255, 0, 0)}}},
     {8, {"duck_theme", {QColor(255, 189, 34)}}},
-    {9, {"heat_theme", {QColor(255, 255, 16)}}}
+    {9, {"heat_theme", {QColor(255, 255, 16)}}},
+    {10, {"blackhole_theme", {QColor(48, 0, 90)}}}
   };
 
   for (auto &[key, themeData] : themeConfiguration) {
