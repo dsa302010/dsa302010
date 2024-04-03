@@ -1266,12 +1266,12 @@ void AnnotatedCameraWidget::initializeFrogPilotWidgets() {
 							                                            {0.4, QBrush(QColor(255, 255, 16, 255))}, 
 							                                            {0.6, QBrush(QColor(155, 0, 0, 255))}, 
 							                                            {1.0, QBrush(QColor(0, 0, 0, 255))}}}},
-{10, {"blackhole_theme", 4, QColor(48, 0, 90, 155), {{0.1, QBrush(QColor(48, 0, 90, 255))}, 
-							                                            {0.2, QBrush(QColor(170, 0, 255, 255))},
-												                                  {0.3, QBrush(QColor(2, 0, 96, 255))}, 
-							                                            {0.4, QBrush(QColor(0, 0, 0, 255))},
-												                                  {0.5, QBrush(QColor(2, 0, 96, 255))}, 
-							                                            {0.6, QBrush(QColor(170, 0, 255, 255))}, 
+{10, {"blackhole_theme", 4, QColor(48, 0, 90, 155), {{0.0, QBrush(QColor(48, 0, 90, 255))}, 
+							                                            {0.1, QBrush(QColor(170, 0, 255, 255))},
+												                                  {0.2, QBrush(QColor(2, 0, 96, 255))}, 
+							                                            {0.3, QBrush(QColor(0, 0, 0, 255))},
+												                                  {0.4, QBrush(QColor(2, 0, 96, 255))}, 
+							                                            {0.5, QBrush(QColor(170, 0, 255, 255))}, 
 							                                            {1.0, QBrush(QColor(48, 0, 90, 255))}}}},                                                                                                           
   };
 
