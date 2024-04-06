@@ -85,7 +85,8 @@ Sidebar::Sidebar(QWidget *parent) : QFrame(parent), onroad(false), flag_pressed(
     {8, {"duck_theme", {QColor(255, 189, 34)}}},
     {9, {"heat_theme", {QColor(255, 255, 16)}}},
     {10, {"blackhole_theme", {QColor(48, 0, 90)}}},
-    {11, {"desert_theme", {QColor(255, 179, 0)}}}
+    {11, {"desert_theme", {QColor(255, 179, 0)}}},
+    {12, {"bigcat_theme", {QColor(255, 132, 0)}}}
   };
 
   for (auto &[key, themeData] : themeConfiguration) {
