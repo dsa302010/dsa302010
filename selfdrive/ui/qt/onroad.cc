@@ -1293,10 +1293,11 @@ void AnnotatedCameraWidget::initializeFrogPilotWidgets() {
 							                                            {1.0, QBrush(QColor(255, 132, 0, 255))}}}},
  {13, {"donut_theme", 4, QColor(255, 170, 229, 155), {{0.0, QBrush(QColor(255, 219, 147, 255))}, 
 							                                            {0.1, QBrush(QColor(179, 141, 64, 255))},
-												                                  {0.2, QBrush(QColor(71, 46, 0, 255))}, 
-							                                            {0.3, QBrush(QColor(255, 0, 230, 255))},
-												                                  {0.4, QBrush(QColor(255, 170, 229, 255))}, 
-							                                            {0.5, QBrush(QColor(255, 0, 157, 255))}, 
+												                                  {0.15, QBrush(QColor(71, 46, 0, 255))}, 
+							                                            {0.2, QBrush(QColor(255, 0, 230, 255))},
+												                                  {0.3, QBrush(QColor(255, 170, 229, 255))}, 
+							                                            {0.4, QBrush(QColor(255, 0, 157, 255))},
+                                                          {0.5, QBrush(QColor(0, 0, 0, 255))},
 							                                            {1.0, QBrush(QColor(0, 0, 0, 255))}}}},                                                                                                                                                                                                                              
   };
 
