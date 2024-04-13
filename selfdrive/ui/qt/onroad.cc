@@ -390,6 +390,8 @@ ExperimentalButton::ExperimentalButton(QWidget *parent) : experimental_mode(fals
     {5, loadPixmap("../frogpilot/assets/wheel_images/hyundai.png", {img_size, img_size})},
     {6, loadPixmap("../frogpilot/assets/wheel_images/stalin.png", {img_size, img_size})},
     {7, loadPixmap("../frogpilot/assets/random_events/images/firefox.png", {img_size, img_size})},
+    {8, loadPixmap("../frogpilot/assets/wheel_images/donut.png", {img_size, img_size})},
+    {9, loadPixmap("../frogpilot/assets/wheel_images/donut2.png", {img_size, img_size})},
   };
 
   wheelImagesGif[1] = new QMovie("../frogpilot/assets/random_events/images/weeb_wheel.gif", QByteArray(), this);
@@ -1288,7 +1290,14 @@ void AnnotatedCameraWidget::initializeFrogPilotWidgets() {
 							                                            {0.3, QBrush(QColor(0, 0, 0, 255))},
 												                                  {0.4, QBrush(QColor(255, 179, 0, 255))}, 
 							                                            {0.5, QBrush(QColor(0, 0, 0, 255))}, 
-							                                            {1.0, QBrush(QColor(255, 132, 0, 255))}}}},                                                                                                                                                                     
+							                                            {1.0, QBrush(QColor(255, 132, 0, 255))}}}},
+ {13, {"donut_theme", 4, QColor(255, 170, 229, 155), {{0.0, QBrush(QColor(255, 219, 147, 255))}, 
+							                                            {0.1, QBrush(QColor(179, 141, 64, 255))},
+												                                  {0.2, QBrush(QColor(71, 46, 0, 255))}, 
+							                                            {0.3, QBrush(QColor(255, 0, 230, 255))},
+												                                  {0.4, QBrush(QColor(255, 170, 229, 255))}, 
+							                                            {0.5, QBrush(QColor(255, 0, 157, 255))}, 
+							                                            {1.0, QBrush(QColor(0, 0, 0, 255))}}}},                                                                                                                                                                                                                              
   };
 
   // Holiday themes configuration
