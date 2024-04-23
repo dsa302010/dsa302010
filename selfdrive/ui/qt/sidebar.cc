@@ -87,7 +87,8 @@ Sidebar::Sidebar(QWidget *parent) : QFrame(parent), onroad(false), flag_pressed(
     {10, {"blackhole_theme", {QColor(48, 0, 90)}}},
     {11, {"desert_theme", {QColor(255, 179, 0)}}},
     {12, {"bigcat_theme", {QColor(255, 132, 0)}}},
-    {13, {"donut_theme", {QColor(255, 170, 229)}}}
+    {13, {"donut_theme", {QColor(255, 170, 229)}}},
+    {14, {"sunburst_theme", {QColor(255, 247, 0)}}}
   };
 
   for (auto &[key, themeData] : themeConfiguration) {

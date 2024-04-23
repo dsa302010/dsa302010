@@ -1291,14 +1291,25 @@ void AnnotatedCameraWidget::initializeFrogPilotWidgets() {
 												                                  {0.4, QBrush(QColor(255, 179, 0, 255))}, 
 							                                            {0.5, QBrush(QColor(0, 0, 0, 255))}, 
 							                                            {1.0, QBrush(QColor(255, 132, 0, 255))}}}},
- {13, {"donut_theme", 4, QColor(255, 170, 229, 155), {{0.0, QBrush(QColor(255, 219, 147, 255))}, 
+{13, {"donut_theme", 4, QColor(255, 170, 229, 155), {{0.0, QBrush(QColor(255, 219, 147, 255))}, 
 							                                            {0.15, QBrush(QColor(179, 141, 64, 255))},
 												                                  {0.20, QBrush(QColor(71, 46, 0, 255))}, 
 							                                            {0.25, QBrush(QColor(255, 0, 230, 255))},
 												                                  {0.35, QBrush(QColor(255, 170, 229, 255))}, 
 							                                            {0.40, QBrush(QColor(255, 0, 157, 255))},
                                                           {0.45, QBrush(QColor(0, 0, 0, 255))},
-							                                            {1.0, QBrush(QColor(0, 0, 0, 255))}}}},                                                                                                                                                                                                                              
+							                                            {1.0, QBrush(QColor(0, 0, 0, 255))}}}},
+{14, {"sunburst_theme", 4, QColor(255, 247, 0, 155), {{0.0, QBrush(QColor(100, 0, 177, 255))}, 
+							                                            {0.1, QBrush(QColor(255, 247, 0, 255))},
+												                                  {0.2, QBrush(QColor(59, 0, 105, 255))}, 
+							                                            {0.3, QBrush(QColor(132, 0, 255, 255))},
+												                                  {0.4, QBrush(QColor(55, 0, 106, 255))}, 
+							                                            {0.5, QBrush(QColor(255, 247, 0, 255))},
+ 												                                  {0.7, QBrush(QColor(54, 0, 95, 255))},
+							                                            {1.0, QBrush(QColor(0, 0, 0, 255))}}}},
+
+                                                         
+                                                                                                                                                                                                                                                                                        
   };
 
   // Holiday themes configuration
