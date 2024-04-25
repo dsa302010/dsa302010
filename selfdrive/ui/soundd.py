@@ -228,7 +228,8 @@ class Soundd:
       11: "desert_theme",
       12: "bigcat_theme",
       13: "donut_theme",
-      14: "sunburst_theme"
+      14: "sunburst_theme",
+      15: "ctncandy_theme"
     }
 
     holiday_themes = custom_theme and self.params.get_bool("HolidayThemes")
