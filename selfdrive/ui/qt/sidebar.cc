@@ -90,7 +90,8 @@ Sidebar::Sidebar(QWidget *parent) : QFrame(parent), onroad(false), flag_pressed(
     {13, {"donut_theme", {QColor(255, 170, 229)}}},
     {14, {"la_theme", {QColor(255, 247, 0)}}},
     {15, {"ctncandy_theme", {QColor(255, 247, 0)}}},
-    {16, {"sunburst_theme", {QColor(55, 0, 106)}}}
+    {16, {"sunburst_theme", {QColor(55, 0, 106)}}},
+    {17, {"nightrider_theme", {QColor(88, 0, 0)}}}
   };
 
   for (auto &[key, themeData] : themeConfiguration) {

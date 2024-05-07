@@ -1323,6 +1323,13 @@ void AnnotatedCameraWidget::initializeFrogPilotWidgets() {
 							                                            {0.5, QBrush(QColor(55, 0, 106, 255))},
  												                                  {0.7, QBrush(QColor(54, 0, 95, 255))},
 							                                            {1.0, QBrush(QColor(0, 0, 0, 255))}}}},
+{17, {"nighttrider_theme", 4, QColor(88, 0, 0, 155), {{0.0, QBrush(QColor(0, 0, 0, 255))}, 
+							                                            {0.1, QBrush(QColor(0, 0, 0, 255))},
+												                                  {0.25, QBrush(QColor(88, 0, 0, 255))}, 
+							                                            {0.3, QBrush(QColor(255, 0, 0, 255))},
+												                                  {0.35, QBrush(QColor(88, 0, 0, 255))}, 
+							                                            {0.5, QBrush(QColor(0, 0, 0, 255))},
+							                                            {1.0, QBrush(QColor(0, 0, 0, 255))}}}},
                                                          
 
                                                          
