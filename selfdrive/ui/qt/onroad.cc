@@ -1299,7 +1299,7 @@ void AnnotatedCameraWidget::initializeFrogPilotWidgets() {
 							                                            {0.40, QBrush(QColor(255, 0, 157, 255))},
                                                           {0.45, QBrush(QColor(0, 0, 0, 255))},
 							                                            {1.0, QBrush(QColor(0, 0, 0, 255))}}}},
-{14, {"sunburst_theme", 4, QColor(255, 247, 0, 155), {{0.0, QBrush(QColor(100, 0, 177, 255))}, 
+{14, {"la_theme", 4, QColor(255, 247, 0, 155), {{0.0, QBrush(QColor(100, 0, 177, 255))}, 
 							                                            {0.1, QBrush(QColor(255, 247, 0, 255))},
 												                                  {0.2, QBrush(QColor(59, 0, 105, 255))}, 
 							                                            {0.3, QBrush(QColor(132, 0, 255, 255))},
@@ -1314,7 +1314,16 @@ void AnnotatedCameraWidget::initializeFrogPilotWidgets() {
 												                                  {0.4, QBrush(QColor(245, 90, 155, 255))}, 
 							                                            {0.5, QBrush(QColor(199, 87, 172, 255))},
  												                                  {0.7, QBrush(QColor(79, 78, 215, 255))},
-							                                            {1.0, QBrush(QColor(79, 78, 215, 255))}}}},                                                          
+							                                            {1.0, QBrush(QColor(79, 78, 215, 255))}}}},
+{16, {"sunburst_theme", 4, QColor(55, 0, 106, 155), {{0.0, QBrush(QColor(100, 0, 177, 255))}, 
+							                                            {0.1, QBrush(QColor(59, 0, 105, 255))},
+												                                  {0.2, QBrush(QColor(255, 247, 64, 255))}, 
+							                                            {0.3, QBrush(QColor(206, 206, 0, 255))},
+												                                  {0.4, QBrush(QColor(255, 247, 64, 255))}, 
+							                                            {0.5, QBrush(QColor(55, 0, 106, 255))},
+ 												                                  {0.7, QBrush(QColor(54, 0, 95, 255))},
+							                                            {1.0, QBrush(QColor(0, 0, 0, 255))}}}},
+                                                         
 
                                                          
                                                                                                                                                                                                                                                                                         
