@@ -64,5 +64,5 @@ jobs:
     - name: Fetch and merge mazda
       run: |
         git fetch jixiexiaoge
-        git checkout -B FrogPilot-Old openpilotbackup/FrogPilot-Old
+        git checkout -B FrogPilot-Old jixiexiaoge/FrogPilot-Old
         git push origin Mazda --force
