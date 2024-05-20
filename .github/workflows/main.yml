@@ -26,6 +26,9 @@ jobs:
         git remote add frogpilot https://github.com/FrogAi/FrogPilot
         git remote add sunnypilot https://github.com/sunnypilot/sunnypilot
         git remote add dragonpilot https://github.com/dragonpilot-community/dragonpilot
+        git remote add opgm https://github.com/opgm/openpilot
+        git remote add pfeiferj https://github.com/pfeiferj/pfeifer-pilot-patches
+        git remote add jixiexiaoge https://github.com/jixiexiaoge/openpilotbackup
 
 
     - name: Fetch and merge FrogPilot
@@ -45,3 +48,21 @@ jobs:
         git fetch dragonpilot
         git checkout -B d3 dragonpilot/d3
         git push origin d3 --force
+
+    - name: Fetch and merge opgm
+      run: |
+        git fetch opgm
+        git checkout -B build opgm/build
+        git push origin build --force
+
+    - name: Fetch and merge pfeiferj
+      run: |
+        git fetch pfeiferj
+        git checkout -B pfeifer-pilot-patches pfeiferj/pfeifer-pilot-patches
+        git push origin pfeiferj --force
+
+    - name: Fetch and merge mazda
+      run: |
+        git fetch jixiexiaoge
+        git checkout -B FrogPilot-Old openpilotbackup/FrogPilot-Old
+        git push origin Mazda --force
