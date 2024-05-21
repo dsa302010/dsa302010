@@ -28,13 +28,19 @@ jobs:
         git remote add dragonpilot https://github.com/dragonpilot-community/dragonpilot
         git remote add opgm https://github.com/opgm/openpilot
         git remote add pfeiferj https://github.com/pfeiferj/pfeifer-pilot-patches
-        git remote add twilsonco https://github.com/twilsonco/openpilot
+        git remote add mykl1022 https://github.com/mykl1022/openpilot
 
     - name: Fetch and merge FrogPilot
       run: |
         git fetch frogpilot
         git checkout -B FrogPilot frogpilot/FrogPilot
         git push origin FrogPilot --force
+
+    - name: Fetch and merge MypilotMypilot
+      run: |
+        git fetch mykl1022
+        git checkout -B Mypilot mykl1022/Mypilot
+        git push origin Mypilot --force
 
     - name: Fetch and merge dev-c3
       run: |
@@ -53,13 +59,6 @@ jobs:
         git fetch opgm
         git checkout -B build opgm/build
         git push origin build --force
-
-    - name: Fetch and merge twilsonco
-      run: |
-        git fetch twilsonco
-        git checkout -B tw-staging twilsonco/tw-staging
-        git push origin tw-staging --force
-
 
     - name: Fetch and merge pfeiferj
       run: |
