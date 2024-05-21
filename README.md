@@ -10,10 +10,16 @@ mr-one.cn/fork/jixiexiaoge/Mypilot
 
 分支解释：
  frogpilot https://github.com/FrogAi/FrogPilot  【FrogPilot 或者 FrogPilot-Old 0.9.6】
+ 
  sunnypilot https://github.com/sunnypilot/sunnypilot 【dev-c3】
+ 
  dragonpilot https://github.com/dragonpilot-community/dragonpilot 【d3】
+ 
  opgm https://github.com/opgm/openpilot 【build 】
+ 
  pfeiferj https://github.com/pfeiferj/pfeifer-pilot-patches 【pfeifer-pilot-patches】
+ 
  mykl1022 https://github.com/mykl1022/openpilot 【Mypilot】
+ 
 
 欢迎反馈其他优秀的分支，这个是GitHub每天自动同步的项目！可以实现自动同步更新！
