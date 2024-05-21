@@ -33,7 +33,7 @@ jobs:
     - name: Fetch and merge twilsonco
       run: |
         git fetch twilsonco
-        git checkout -B tw-dev-Old twilsonco/tw-dev
+        git checkout -B tw-dev twilsonco/tw-dev
         git push origin tw-dev --force
 
     - name: Fetch and merge FrogPilot
