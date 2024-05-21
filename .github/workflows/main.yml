@@ -28,13 +28,13 @@ jobs:
         git remote add dragonpilot https://github.com/dragonpilot-community/dragonpilot
         git remote add opgm https://github.com/opgm/openpilot
         git remote add pfeiferj https://github.com/pfeiferj/pfeifer-pilot-patches
-        git remote add jixiexiaoge https://github.com/jixiexiaoge/openpilotbackup
+        git remote add twilsonco https://github.com/twilsonco/openpilot
 
-    - name: Fetch and merge mazda
+    - name: Fetch and merge twilsonco
       run: |
-        git fetch jixiexiaoge
-        git checkout -B FrogPilot-Old jixiexiaoge/FrogPilot-Old
-        git push origin FrogPilot-Old --force
+        git fetch twilsonco
+        git checkout -B tw-dev-Old twilsonco/tw-dev
+        git push origin tw-dev --force
 
     - name: Fetch and merge FrogPilot
       run: |
