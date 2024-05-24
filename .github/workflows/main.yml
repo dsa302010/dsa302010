@@ -25,6 +25,15 @@ jobs:
       run: |
         git remote add frogpilot https://github.com/FrogAi/FrogPilot
         git remote add sunnypilot https://github.com/sunnypilot/sunnypilot
+        git remote add henryccy https://github.com/henryccy
+        
+    - name: Fetch and merge henryccy
+      run: |
+        git fetch henryccy
+        git checkout -B hfop henryccy/hfop
+        git push origin hfop --force
+
+
 
     - name: Fetch and merge FrogPilot
       run: |
