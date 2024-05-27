@@ -1,6 +1,6 @@
-name: Sync Forks
+name: CI
 
-on:
+on:[push]
   schedule:
     - cron: '0 0 * * *'  # 每天同步一次
   push:
