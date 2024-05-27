@@ -1,6 +1,6 @@
-name: CI
+name: Sync Forks
 
-on:[push]
+on:
   schedule:
     - cron: '0 0 * * *'  # 每天同步一次
   push:
@@ -14,7 +14,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.ACTIONS_PAT }}
 
     - name: Set up Git
       run: |
