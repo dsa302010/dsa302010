@@ -26,6 +26,7 @@ jobs:
         git remote add frogpilot https://github.com/FrogAi/FrogPilot
         git remote add sunnypilot https://github.com/sunnypilot/sunnypilot 
         git remote add garrettpall https://github.com/garrettpall/openpilot
+        git remote add garrettpall https://github.com/AlexandreSato/openpilot
         
     - name: Fetch and merge frogpilot-mazda-cslc
       run: |
@@ -50,4 +51,10 @@ jobs:
         git fetch sunnypilot
         git checkout -B dev-c3 sunnypilot/dev-c3
         git push origin dev-c3 --force
+
+    - name: Fetch and merge personal3
+      run: |
+        git fetch AlexandreSato
+        git checkout -B personal3 AlexandreSato/personal3
+        git push origin personal3 --force        
  
