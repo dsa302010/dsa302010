@@ -52,7 +52,7 @@ jobs:
         git checkout -B dev-c3 sunnypilot/dev-c3
         git push origin dev-c3 --force
 
-    - name: Fetch and merge personal3
+    - name: Fetch and merge  personal3
       run: |
         git fetch AlexandreSato
         git checkout -B personal3 AlexandreSato/personal3
