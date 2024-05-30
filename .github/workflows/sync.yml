@@ -33,12 +33,6 @@ jobs:
         git checkout -B frogpilot-mazda-cslc garrettpall/frogpilot-mazda-cslc
         git push origin frogpilot-mazda-cslc --force
         
-    - name: Fetch and merge FrogPilot-Old
-      run: |
-        git fetch frogpilot
-        git checkout -B FrogPilot-Old frogpilot/FrogPilot-Old
-        git push origin FrogPilot-Old --force
-
     - name: Fetch and merge FrogPilot
       run: |
         git fetch frogpilot
