@@ -18,7 +18,7 @@ from openpilot.selfdrive.frogpilot.controls.lib.frogpilot_variables import FrogP
 
 SAMPLE_RATE = 48000
 SAMPLE_BUFFER = 4096 # (approx 100ms)
-MAX_VOLUME = 1.0
+MAX_VOLUME = 0.3
 MIN_VOLUME = 0.1
 CONTROLS_TIMEOUT = 5 # 5 seconds
 FILTER_DT = 1. / (micd.SAMPLE_RATE / micd.FFT_SAMPLES)
@@ -31,11 +31,11 @@ AudibleAlert = car.CarControl.HUDControl.AudibleAlert
 
 sound_list: dict[int, tuple[str, int | None, float]] = {
   # AudibleAlert, file name, play count (none for infinite)
-  AudibleAlert.engage: ("engage.wav", 1, MAX_VOLUME),
-  AudibleAlert.disengage: ("disengage.wav", 1, MAX_VOLUME),
-  AudibleAlert.refuse: ("refuse.wav", 1, MAX_VOLUME),
+  AudibleAlert.engage: ("engage.wav", 0.3, MAX_VOLUME),
+  AudibleAlert.disengage: ("disengage.wav", 0.3, MAX_VOLUME),
+  AudibleAlert.refuse: ("refuse.wav", 0.3, MAX_VOLUME),
 
-  AudibleAlert.prompt: ("prompt.wav", 1, MAX_VOLUME),
+  AudibleAlert.prompt: ("prompt.wav", 0.3, MAX_VOLUME),
   AudibleAlert.promptRepeat: ("prompt.wav", None, MAX_VOLUME),
   AudibleAlert.promptDistracted: ("prompt_distracted.wav", None, MAX_VOLUME),
 
@@ -43,13 +43,13 @@ sound_list: dict[int, tuple[str, int | None, float]] = {
   AudibleAlert.warningImmediate: ("warning_immediate.wav", None, MAX_VOLUME),
 
   # Random Events
-  AudibleAlert.angry: ("angry.wav", 1, MAX_VOLUME),
-  AudibleAlert.doc: ("doc.wav", 1, MAX_VOLUME),
-  AudibleAlert.fart: ("fart.wav", 1, MAX_VOLUME),
-  AudibleAlert.firefox: ("firefox.wav", 1, MAX_VOLUME),
-  AudibleAlert.nessie: ("nessie.wav", 1, MAX_VOLUME),
-  AudibleAlert.noice: ("noice.wav", 1, MAX_VOLUME),
-  AudibleAlert.uwu: ("uwu.wav", 1, MAX_VOLUME),
+  AudibleAlert.angry: ("angry.wav", 0.3, MAX_VOLUME),
+  AudibleAlert.doc: ("doc.wav", 0.3, MAX_VOLUME),
+  AudibleAlert.fart: ("fart.wav", 0.3, MAX_VOLUME),
+  AudibleAlert.firefox: ("firefox.wav", 0.3, MAX_VOLUME),
+  AudibleAlert.nessie: ("nessie.wav", 0.3, MAX_VOLUME),
+  AudibleAlert.noice: ("noice.wav", 0.3, MAX_VOLUME),
+  AudibleAlert.uwu: ("uwu.wav", 0.3, MAX_VOLUME),
 
   # Other
   AudibleAlert.goat: ("goat.wav", None, MAX_VOLUME),
