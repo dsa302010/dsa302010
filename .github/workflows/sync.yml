@@ -24,7 +24,7 @@ jobs:
     - name: Add remote repositories
       run: |
         git remote add frogpilot https://github.com/FrogAi/FrogPilot
-        git remote add sunnypilot https://github.com/sunnypilot/sunnypilot/tree/dev-c3
+        git remote add sunnypilot https://github.com/sunnypilot/sunnypilot
         git remote add garrettpall https://github.com/garrettpall/openpilot
 
     - name: Fetch and merge frogpilot-mazda-cslc
