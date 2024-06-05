@@ -160,9 +160,9 @@ class CarInterface(CarInterfaceBase):
       tune.kiV =  [.35, .215, .195, .10, .01]
 
       if candidate in TSS2_CAR:
-        ret.stopAccel = -1.1           # Toyota requests -0.4 when stopped
+        ret.stopAccel = -3.0           # Toyota requests -0.4 when stopped
       else:
-        ret.stopAccel = -2.5           # on stock Toyota this is -2.5
+        ret.stopAccel = -3.0           # on stock Toyota this is -2.5
 
       ret.stoppingDecelRate = 0.17
       ret.vEgoStopping = 0.15          # car is near 0.1 to 0.2 when car starts requesting stopping accel
