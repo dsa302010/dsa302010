@@ -38,10 +38,4 @@ jobs:
         git fetch frogpilot
         git checkout -B FrogPilot frogpilot/FrogPilot
         git push origin FrogPilot --force
-
-    - name: Fetch and merge dev-c3
-      run: |
-        git fetch sunnypilot
-        git checkout -B dev-c3 sunnypilot/dev-c3
-        git push origin dev-c3 --force
  
