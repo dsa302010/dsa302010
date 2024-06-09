@@ -46,7 +46,6 @@ def get_max_accel(v_ego):
 def get_min_accel(v_ego):
   return interp(v_ego, A_CRUISE_MIN_BP, A_CRUISE_MIN_VALS)
 
-
 def limit_accel_in_turns(v_ego, angle_steers, a_target, CP):
   """
   This function returns a limited long acceleration allowed, depending on the existing lateral acceleration
