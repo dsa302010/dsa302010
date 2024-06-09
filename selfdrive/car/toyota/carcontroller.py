@@ -123,13 +123,18 @@ class CarController(CarControllerBase):
       interceptor_gas_cmd = 0.
     pcm_accel_cmd = clip(actuators.accel, self.params.ACCEL_MIN, self.params.ACCEL_MAX)
 
-    # TODO: probably can delete this. CS.pcm_acc_status uses a different signal
-    # than CS.cruiseState.enabled. confirm they're not meaningfully different
-    if not (CC.enabled and CS.out.cruiseState.enabled) and CS.pcm_acc_status:
-      pcm_cancel_cmd = 1
-
-    if self.CP.pcmCruise and not CS.pcm_acc_status and CS.out.cruiseState.enabled and self.CP.carFingerprint not in UNSUPPORTED_DSU_CAR:
-      pcm_cancel_cmd = 1
+    # NO_STOP_TIMER_CAR will creep if compensation is applied when stopping or stopped, don't compensate when stopped or stopping
+    should_compensate = True
+    if self.CP.carFingerprint in NO_STOP_TIMER_CAR and ((CS.out.vEgo <  1e-3 and actuators.accel < 1e-3) or stopping):
+      should_compensate = False
+    if CC.longActive and should_compensate and not self.reset_pcm_compensation:
+      accel_offset = CS.pcm_neutral_force / self.CP.mass
+    else:
+      accel_offset = 0.
+    if not CS.out.gasPressed:
+      pcm_accel_cmd = clip(actuators.accel + accel_offset, self.params.ACCEL_MIN, self.params.ACCEL_MAX)
+    else:
+      pcm_accel_cmd = 0.
 
     # on entering standstill, send standstill request
     if CS.out.standstill and not self.last_standstill and (self.CP.carFingerprint not in NO_STOP_TIMER_CAR or self.CP.enableGasInterceptorDEPRECATED) and \
